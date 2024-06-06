@@ -1,0 +1,2270 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+*:focus{outline: none}
+.contact{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.contact form{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  border: 4px double gray;
+  height: 50%;
+  width: 50%;
+  padding: 40px;
+  background-color: rgba(128, 128, 128, 0.44);
+}
+.form{
+  margin: 0 auto;
+  width: 100%;
+  margin-top: 150px;
+  font-family: sans-serif;
+  background: #fff
+}
+.form-item{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px
+}
+.form-item input{
+  display: block;
+  width: 80%;
+  height: 40px;
+  background: transparent;
+  border: solid 1px #ccc;
+  transition: all .3s ease;
+  padding: 0 15px
+}
+.form-item input:focus{
+  border-color: blue
+}
+.form-item label{
+  color: #ccc;
+}
+
+.button-19 {
+  background-color: #1899D6;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: din-round,sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: .8px;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  overflow: visible;
+  padding: 13px 16px;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter .2s;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 40%;
+}
+
+.button-19:after {
+  background-color: #1CB0F6;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  bottom: -4px;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+.button-19:disabled {
+  cursor: auto;
+}
+
+.button-19:active {
+  border-width: 4px 0 0;
+  background: none;
+}
+
+#link{
+  text-decoration: none;
+  color: aqua;
+}
+
+
+@media screen and (min-width: 250px) {
+
+  .body{
+    width: 100%;
+    margin: 0;
+    background-image: url(../public/Stars.jpeg);
+    background-size: cover;
+    background-repeat: repeat;
+  }
+  
+  .main{
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  header{
+    position: fixed;
+    top: 0;
+    display: grid;
+    width: 100%;
+    height: 30px;
+    border-bottom: 2px solid black;
+    background-color: rgb(52, 12, 59);
+    color: whitesmoke;
+    font-size: .7rem;
+    grid-template-columns: 5fr 4fr;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .nav_bar{
+   display: flex;
+   flex-direction: row; 
+   width: 100%;
+   height: 30px;
+  }
+  
+  .nav_bar button{
+    display: inherit;
+    width: 100%;
+    height: 30px;
+    font-size: 5px;
+    color: aqua;
+    min-width: 8px; 
+    border: 1px;
+    border-color: darkslateblue;
+    background-color: rgb(3, 48, 88);
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+  }
+  footer{
+    width: 100%;
+    height: 250px;
+    background-image: url(../public/Stars.jpeg);
+  }
+  .ft{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 100%;
+    height: 200px;
+    align-items: center;
+    background-color: rgb(206, 201, 224);
+  }
+  
+  .footer{
+    position: static;
+    bottom: 0;
+    margin-top: 10px;
+    font-size: 1rem;
+    color: aliceblue;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-gap:12px;
+  }
+  .cp{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    color: black;
+    font-size: .7rem;
+  }
+  .menu{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    place-items: center;
+    grid-gap:3px;
+  }
+  .menu a{
+    text-decoration: none;
+    color: grey;
+    font-size: .7rem;
+  }
+  .menu a:hover{
+    color: white;
+  }
+  
+  .gl{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+    color: black;
+    font-size: 2rem;
+    padding: 10px;
+    border: 3px solid black;
+    border-radius: 50%;
+  }
+  .gl:hover{
+    background-color: rgb(52, 12, 59);
+    color: #eee;
+    text-decoration-color: #eee;
+    border: 3px solid rgb(241, 230, 230);
+  }
+  
+  
+  button:hover{
+    background-color: rgb(52, 12, 59);
+    color: #eee;
+    text-decoration-color: #eee;
+    border-bottom: 2px solid black;
+    border-color: rgba(45, 9, 78, 0.609);
+  }
+  button .resume{
+    text-decoration: none;
+    color: aqua;
+  }
+  button .resume:hover{
+    color: #eee;
+  }
+  .home{
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 30vh 30vh;
+    place-items: center;
+ 
+  }
+  
+  
+  .myname{
+    width: 100%;
+    height: 100vh;
+    padding-left: 10px;
+    color: rgb(19, 95, 161);
+    font-size: 1rem;
+    text-align: center;
+    text-wrap: nowrap;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .myProfile{
+    padding: 10px;
+    background-image: url("../public/IMG_20240418_145024.jpg");
+    background-size: cover;
+    background-color: aliceblue;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+  
+  .myProfile:hover{
+    border: 1px double rgb(59, 8, 107);
+    box-shadow: 
+         5px 5px 5px rgba(4, 41, 81, 0.636),
+         5px 5px 10px rgba(4, 41, 81, 0.636),
+         5px 5px 20px rgba(4, 41, 81, 0.636),
+        -5px -5px 15px rgba(4, 41, 81, 0.636);
+  }
+  .about{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .text_about{
+    color: #eee;
+    padding: 20vb;
+    text-align: center;
+    font-size: 1rem;
+  }
+   
+  .projects{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #proj p{
+    color: black;
+    text-align: center;
+    font-size: 1.5rem;
+   
+  }
+  #proj{
+    border: 3px solid purple;
+    border-radius: 10px;
+    background-color: white;
+    width: 250px;
+    display: grid;
+    grid-template-rows: none none;
+  }
+  
+  #proj:hover{
+    border: 3px solid purple;
+    border-radius: 10px;
+    box-shadow: 
+    12px 12px 12px rgb(78, 25, 142) ;
+  }
+  #miniapp{
+    display: grid;
+    padding: 5px;
+    border-bottom: 3px solid rgb(138, 10, 181);
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  #applogo{
+    height: 100px;
+    width: 100px;
+    background-color: #eee;
+  }
+  
+  #miniapp a{
+      text-decoration: none;
+      text-align: start;
+      color: purple;
+      font-size: 2rem;
+  }
+  .skills{
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    
+  }
+  .skills p{
+    color: #eee;
+  }
+  #show{
+    background-color: rgb(206, 201, 224);
+    
+  }
+  .language{
+    width: 70%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: space-around;
+  }
+  
+  .language button{
+    margin: 10px;
+    font-size: 3rem;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:13px 0;
+  }
+  #javaScript button{
+    color: rgb(12, 12, 10);
+    background-color: yellow;
+  }
+  #javaScript button:hover{
+    color: yellow;
+    background-color:rgb(12, 12, 10);
+  }
+  #python button{
+    color: yellow;
+    background-color: rgb(34, 135, 193);
+  }
+  #python button:hover{
+    color: rgb(34, 135, 193);
+    background-color: yellow;
+  }
+  #Cpp button{
+    color: rgb(41, 98, 203);
+    background-color: #eee;
+  }
+  #Cpp button:hover{
+    color: white;
+    background-color: rgb(41, 98, 203);
+  }
+  #java button:hover{
+    color: rgb(34, 135, 193);
+    background-color: yellow;
+  }
+  #java button{
+    color: yellow;
+    background-color: rgb(34, 135, 193);
+  }
+  #Reactjs button{
+    color: skyblue;
+    background-color: black;
+  }
+  #Reactjs button:hover{
+    background-color: skyblue;
+    color: black;
+  }
+  #Nodejs button:hover{
+    color: green;
+    background-color: black;
+  }
+  #Nodejs button{
+    background-color: green;
+    color: black;
+  }
+  #Spring button{
+    color: green;
+    background-color: rgb(253, 250, 250);
+  }
+  #Spring button:hover{
+    background-color: green;
+    color: rgb(247, 243, 243);
+  }
+  #MySQL button:hover{
+    color: rgb(34, 135, 193);
+    background-color: rgb(255, 132, 0);
+  }
+  #MySQL button{
+    color:  rgb(255, 132, 0);
+    background-color: rgb(34, 135, 193);
+  }
+  #MongoDB  button{
+    color: green;
+    background-color: rgb(253, 250, 250);
+  }
+  #MongoDB button:hover{
+    background-color: green;
+    color: rgb(247, 243, 243);
+  }
+  
+  #javaScriptsk{
+    background-color: blueviolet;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  #circular{
+    position: relative;
+    height: 50px;
+    width: 50px;
+    margin: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #circular::before{
+    content: "";
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: rgb(203, 203, 225);
+  }
+  
+  #perc{
+    position: absolute;
+    font-size: 10px;
+    font-weight: 500;
+    color: blueviolet;
+  }
+  #text-name{
+    color: #eee;
+  }
+  #progress{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+  }
+  #jslogo{
+    margin: 10px;
+    font-size: 5rem;
+    width: 100px;
+    height: 100px;
+    border-radius: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:10px 0;
+  }
+  .jsc1{
+    background: conic-gradient(rgb(72, 20, 213) 270deg, white 0deg );
+  }
+  
+  .jsc2{
+    background: conic-gradient(rgb(218, 32, 85) 160deg, white 0deg );
+  }
+  .jsc3{
+    background: conic-gradient(rgb(0, 128, 15) 234deg, white 0deg );
+  }
+  .pyc1{
+    background: conic-gradient(rgb(0, 128, 15) 234deg, white 0deg );
+  }
+  
+  .pyc2{
+    background: conic-gradient(rgb(218, 32, 85) 160deg, white 0deg );
+  }
+  .pyc3{
+    background: conic-gradient(rgb(193, 1, 1) 126deg, white 0deg );
+  }
+  .cc1{
+    background: conic-gradient(rgb(218, 32, 85) 160deg, white 0deg );
+  }
+  
+  .cc2{
+    background: conic-gradient(rgb(193, 1, 1) 126deg, white 0deg );
+  }
+  .cc3{
+    background: conic-gradient(rgb(205, 240, 6) 72deg, white 0deg );
+  }
+  .jc1{
+    background: conic-gradient(rgb(72, 20, 213) 270deg, white 0deg );
+  }
+  
+  .jc2{
+    background: conic-gradient(rgb(38, 221, 9) 198deg, white 0deg );
+  }
+  .jc3{
+    background: conic-gradient(rgb(72, 20, 213) 270deg, white 0deg );
+  }
+  .rjc1{
+    background: conic-gradient(rgb(72, 20, 213) 270deg, white 0deg );
+  }
+  
+  .rjc2{
+    background: conic-gradient(rgb(218, 32, 85) 162deg, white 0deg );
+  }
+  .rjc3{
+    background: conic-gradient(rgb(72, 20, 213) 252deg, white 0deg );
+  }
+  .nc1{
+    background: conic-gradient(rgb(0, 128, 15) 234deg, white 0deg );
+  }
+  
+  .nc2{
+    background: conic-gradient(rgb(218, 32, 85) 160deg, white 0deg );
+  }
+  .nc3{
+    background: conic-gradient(rgb(0, 128, 15) 216deg, white 0deg );
+  }
+  .sc1{
+    background: conic-gradient(rgb(0, 128, 15) 234deg, white 0deg );
+  }
+  
+  .sc2{
+    background: conic-gradient(rgb(218, 32, 85) 160deg, white 0deg );
+  }
+  .sc3{
+    background: conic-gradient(rgb(0, 128, 15) 234deg, white 0deg );
+  }
+  .mdc1{
+    background: conic-gradient(rgb(38, 221, 9) 198deg, white 0deg );
+  }
+  
+  .mdc2{
+    background: conic-gradient(rgb(218, 32, 85) 160deg, white 0deg );
+  }
+  .mdc3{
+    background: conic-gradient(rgb(0, 128, 15) 234deg, white 0deg );
+  }
+  .msc1{
+    background: conic-gradient(rgb(0, 128, 15) 234deg, white 0deg );
+  }
+  
+  .msc2{
+    background: conic-gradient(rgb(218, 32, 85) 160deg, white 0deg );
+  }
+  .msc3{
+    background: conic-gradient(rgb(0, 128, 15) 216deg, white 0deg );
+  }
+  
+  .java{
+    color: rgb(34, 135, 193);
+    background-color: yellow;
+  }
+  .cpp{
+    color: rgb(41, 98, 203);
+    background-color: #eee;
+  }
+  .py{
+    color: rgb(34, 135, 193);
+    background-color: yellow;
+  }
+  .js{
+    color: rgb(12, 12, 10);
+    background-color: yellow;
+  }
+  .md{
+    color: green;
+    background-color: rgb(253, 250, 250);
+  }
+  .ms{
+    color:  rgb(255, 132, 0);
+    background-color: rgb(34, 135, 193);
+  }
+  .node{
+    background-color: green;
+    color: black;
+  }
+  .rjs{
+    color: skyblue;
+    background-color: black;
+  }
+  .sp{
+    color: green;
+    background-color: rgb(253, 250, 250);
+  }
+  #ap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  #ds{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  #text-name{
+    color: aquamarine;
+    text-align: center;
+    font-size: 1rem;
+    text-shadow: 2px 2px rgb(18, 129, 247);
+  }
+}
+@media  screen and (min-width: 400px) {
+
+    .body{
+      width: 100%;
+      margin: 0;
+      background-image: url(../public/Stars.jpeg);
+      background-size: cover;
+      background-repeat: repeat;
+    }
+    
+    .main{
+      width: 100%;
+      max-width: 100%;
+    }
+    
+    header{
+      position: fixed;
+      top: 0;
+      display: grid;
+      width: 100%;
+      height: 30px;
+      border-bottom: 2px solid black;
+      background-color: rgb(52, 12, 59);
+      color: whitesmoke;
+      font-size: .7rem;
+      grid-template-columns: 5fr 4fr;
+      justify-content: center;
+      text-align: center;
+    }
+    
+    .nav_bar{
+     display: flex;
+     flex-direction: row; 
+     width: 100%;
+     height: 30px;
+    }
+    
+    .nav_bar button{
+      display: inherit;
+      width: 100%;
+      height: 30px;
+      font-size: 5px;
+      color: aqua;
+      min-width: 8px; 
+      border: 1px;
+      border-color: darkslateblue;
+      background-color: rgb(3, 48, 88);
+      cursor: pointer;
+      align-items: center;
+      justify-content: center;
+    }
+    footer{
+      width: 100%;
+      height: 250px;
+      background-image: url(../public/Stars.jpeg);
+    }
+    .ft{
+      display: grid;
+      grid-template-rows: 1fr 1fr 1fr;
+      width: 100%;
+      height: 200px;
+      align-items: center;
+      background-color: rgb(206, 201, 224);
+    }
+    
+    .footer{
+      position: static;
+      bottom: 0;
+      margin-top: 10px;
+      font-size: 1rem;
+      color: aliceblue;
+      display: grid;
+      place-items: center;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-gap:12px;
+    }
+    .cp{
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      color: black;
+      font-size: .7rem;
+    }
+    .menu{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      place-items: center;
+      grid-gap:3px;
+    }
+    .menu a{
+      text-decoration: none;
+      color: grey;
+      font-size: .7rem;
+    }
+    .menu a:hover{
+      color: white;
+    }
+    
+    .gl{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: grey;
+      color: black;
+      font-size: 2rem;
+      padding: 10px;
+      border: 3px solid black;
+      border-radius: 50%;
+    }
+    .gl:hover{
+      background-color: rgb(52, 12, 59);
+      color: #eee;
+      text-decoration-color: #eee;
+      border: 3px solid rgb(241, 230, 230);
+    }
+    
+    
+    button:hover{
+      background-color: rgb(52, 12, 59);
+      color: #eee;
+      text-decoration-color: #eee;
+      border-bottom: 2px solid black;
+      border-color: rgba(45, 9, 78, 0.609);
+    }
+    button .resume{
+      text-decoration: none;
+      color: aqua;
+    }
+    button .resume:hover{
+      color: #eee;
+    }
+    .home{
+      margin: 0;
+      width: 100%;
+      height: 100vh;
+      display: grid;
+      grid-template-columns: 50% 50%;
+      place-items: center;
+      grid-gap: 20px;
+    }
+    
+    
+    .myname{
+      width: 100%;
+      height: 100vh;
+      padding-left: 10px;
+      color: rgb(19, 95, 161);
+      font-size: 1rem;
+      text-align: center;
+      text-wrap: nowrap;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+    }
+    .myProfile{
+      padding: 10px;
+      background-image: url("../public/IMG_20240418_145024.jpg");
+      background-size: cover;
+      background-color: aliceblue;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+    }
+    
+    .myProfile:hover{
+      border: 1px double rgb(59, 8, 107);
+      box-shadow: 
+           5px 5px 5px rgba(4, 41, 81, 0.636),
+           5px 5px 10px rgba(4, 41, 81, 0.636),
+           5px 5px 20px rgba(4, 41, 81, 0.636),
+          -5px -5px 15px rgba(4, 41, 81, 0.636);
+    }
+    .about{
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .text_about{
+      color: #eee;
+      padding: 20vb;
+      text-align: center;
+      font-size: 1rem;
+    }
+     
+    .projects{
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    #proj p{
+      color: black;
+      text-align: center;
+      font-size: 1.5rem;
+     
+    }
+    #proj{
+      border: 3px solid purple;
+      border-radius: 10px;
+      background-color: white;
+      width: 250px;
+      display: grid;
+      grid-template-rows: none none;
+    }
+    
+    #proj:hover{
+      border: 3px solid purple;
+      border-radius: 10px;
+      box-shadow: 
+      12px 12px 12px rgb(78, 25, 142) ;
+    }
+    #miniapp{
+      display: grid;
+      padding: 5px;
+      border-bottom: 3px solid rgb(138, 10, 181);
+      grid-template-columns: 1fr 1fr;
+    }
+    
+    #applogo{
+      height: 100px;
+      width: 100px;
+      background-color: #eee;
+    }
+    
+    #miniapp a{
+        text-decoration: none;
+        text-align: start;
+        color: purple;
+        font-size: 2rem;
+    }
+    .skills{
+      width: 100%;
+      min-height: 100vh;
+      padding-top: 30px;
+      display: grid;
+      grid-template-columns: 60% 40%;
+      
+    }
+    .skills p{
+      color: #eee;
+    }
+    #show{
+      background-color: rgb(206, 201, 224);
+      
+    }
+    .language{
+      width: 70%;
+      display: grid;
+      grid-template-columns: 33% 33% 33%;
+      justify-content: space-around;
+    }
+    
+    .language button{
+      margin: 10px;
+      font-size: 3rem;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding:13px 0;
+    }
+    #javaScript button{
+      color: rgb(12, 12, 10);
+      background-color: yellow;
+    }
+    #javaScript button:hover{
+      color: yellow;
+      background-color:rgb(12, 12, 10);
+    }
+    #python button{
+      color: yellow;
+      background-color: rgb(34, 135, 193);
+    }
+    #python button:hover{
+      color: rgb(34, 135, 193);
+      background-color: yellow;
+    }
+    #Cpp button{
+      color: rgb(41, 98, 203);
+      background-color: #eee;
+    }
+    #Cpp button:hover{
+      color: white;
+      background-color: rgb(41, 98, 203);
+    }
+    #java button:hover{
+      color: rgb(34, 135, 193);
+      background-color: yellow;
+    }
+    #java button{
+      color: yellow;
+      background-color: rgb(34, 135, 193);
+    }
+    #Reactjs button{
+      color: skyblue;
+      background-color: black;
+    }
+    #Reactjs button:hover{
+      background-color: skyblue;
+      color: black;
+    }
+    #Nodejs button:hover{
+      color: green;
+      background-color: black;
+    }
+    #Nodejs button{
+      background-color: green;
+      color: black;
+    }
+    #Spring button{
+      color: green;
+      background-color: rgb(253, 250, 250);
+    }
+    #Spring button:hover{
+      background-color: green;
+      color: rgb(247, 243, 243);
+    }
+    #MySQL button:hover{
+      color: rgb(34, 135, 193);
+      background-color: rgb(255, 132, 0);
+    }
+    #MySQL button{
+      color:  rgb(255, 132, 0);
+      background-color: rgb(34, 135, 193);
+    }
+    #MongoDB  button{
+      color: green;
+      background-color: rgb(253, 250, 250);
+    }
+    #MongoDB button:hover{
+      background-color: green;
+      color: rgb(247, 243, 243);
+    }
+    
+    #javaScriptsk{
+      background-color: blueviolet;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-direction: column;
+      height: 100%;
+    }
+    
+    #circular{
+      position: relative;
+      height: 50px;
+      width: 50px;
+      margin: 20px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    #circular::before{
+      content: "";
+      position: absolute;
+      height: 30px;
+      width: 30px;
+      border-radius: 50%;
+      background-color: rgb(203, 203, 225);
+    }
+    
+    #perc{
+      position: absolute;
+      font-size: 10px;
+      font-weight: 500;
+      color: blueviolet;
+    }
+    #text-name{
+      color: #eee;
+    }
+    #progress{
+      display: flex;
+      align-items: center;
+      justify-content:center;
+      flex-direction: column;
+    }
+    #jslogo{
+      margin: 10px;
+      font-size: 7rem;
+      width: 150px;
+      height: 150px;
+      border-radius: 20%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding:20px 0;
+    }
+    .jsc1{
+      background: conic-gradient(rgb(72, 20, 213) 270deg, white 0deg );
+    }
+    
+    .jsc2{
+      background: conic-gradient(rgb(218, 32, 85) 160deg, white 0deg );
+    }
+    .jsc3{
+      background: conic-gradient(rgb(0, 128, 15) 234deg, white 0deg );
+    }
+    .pyc1{
+      background: conic-gradient(rgb(0, 128, 15) 234deg, white 0deg );
+    }
+    
+    .pyc2{
+      background: conic-gradient(rgb(218, 32, 85) 160deg, white 0deg );
+    }
+    .pyc3{
+      background: conic-gradient(rgb(193, 1, 1) 126deg, white 0deg );
+    }
+    .cc1{
+      background: conic-gradient(rgb(218, 32, 85) 160deg, white 0deg );
+    }
+    
+    .cc2{
+      background: conic-gradient(rgb(193, 1, 1) 126deg, white 0deg );
+    }
+    .cc3{
+      background: conic-gradient(rgb(205, 240, 6) 72deg, white 0deg );
+    }
+    .jc1{
+      background: conic-gradient(rgb(72, 20, 213) 270deg, white 0deg );
+    }
+    
+    .jc2{
+      background: conic-gradient(rgb(38, 221, 9) 198deg, white 0deg );
+    }
+    .jc3{
+      background: conic-gradient(rgb(72, 20, 213) 270deg, white 0deg );
+    }
+    .rjc1{
+      background: conic-gradient(rgb(72, 20, 213) 270deg, white 0deg );
+    }
+    
+    .rjc2{
+      background: conic-gradient(rgb(218, 32, 85) 162deg, white 0deg );
+    }
+    .rjc3{
+      background: conic-gradient(rgb(72, 20, 213) 252deg, white 0deg );
+    }
+    .nc1{
+      background: conic-gradient(rgb(0, 128, 15) 234deg, white 0deg );
+    }
+    
+    .nc2{
+      background: conic-gradient(rgb(218, 32, 85) 160deg, white 0deg );
+    }
+    .nc3{
+      background: conic-gradient(rgb(0, 128, 15) 216deg, white 0deg );
+    }
+    .sc1{
+      background: conic-gradient(rgb(0, 128, 15) 234deg, white 0deg );
+    }
+    
+    .sc2{
+      background: conic-gradient(rgb(218, 32, 85) 160deg, white 0deg );
+    }
+    .sc3{
+      background: conic-gradient(rgb(0, 128, 15) 234deg, white 0deg );
+    }
+    .mdc1{
+      background: conic-gradient(rgb(38, 221, 9) 198deg, white 0deg );
+    }
+    
+    .mdc2{
+      background: conic-gradient(rgb(218, 32, 85) 160deg, white 0deg );
+    }
+    .mdc3{
+      background: conic-gradient(rgb(0, 128, 15) 234deg, white 0deg );
+    }
+    .msc1{
+      background: conic-gradient(rgb(0, 128, 15) 234deg, white 0deg );
+    }
+    
+    .msc2{
+      background: conic-gradient(rgb(218, 32, 85) 160deg, white 0deg );
+    }
+    .msc3{
+      background: conic-gradient(rgb(0, 128, 15) 216deg, white 0deg );
+    }
+    
+    .java{
+      color: rgb(34, 135, 193);
+      background-color: yellow;
+    }
+    .cpp{
+      color: rgb(41, 98, 203);
+      background-color: #eee;
+    }
+    .py{
+      color: rgb(34, 135, 193);
+      background-color: yellow;
+    }
+    .js{
+      color: rgb(12, 12, 10);
+      background-color: yellow;
+    }
+    .md{
+      color: green;
+      background-color: rgb(253, 250, 250);
+    }
+    .ms{
+      color:  rgb(255, 132, 0);
+      background-color: rgb(34, 135, 193);
+    }
+    .node{
+      background-color: green;
+      color: black;
+    }
+    .rjs{
+      color: skyblue;
+      background-color: black;
+    }
+    .sp{
+      color: green;
+      background-color: rgb(253, 250, 250);
+    }
+    #ap{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    
+    #text-name{
+      color: aquamarine;
+      text-align: center;
+      font-size: 1rem;
+      text-shadow: 2px 2px rgb(18, 129, 247);
+    }
+}
+@media  screen and (min-width: 750px){
+
+      .body{
+        width: 100%;
+        margin: 0;
+        background-image: url(../public/Stars.jpeg);
+        background-size: cover;
+        background-repeat: repeat;
+      }
+      
+      .main{
+        width: 100%;
+        max-width: 100%;
+      }
+      
+      header{
+        position: fixed;
+        top: 0;
+        display: grid;
+        width: 100%;
+        height: 40px;
+        border-bottom: 2px solid black;
+        background-color: rgb(52, 12, 59);
+        color: whitesmoke;
+        font-size: .7rem;
+        grid-template-columns: 5fr 4fr;
+        justify-content: center;
+        text-align: center;
+      }
+      
+      .nav_bar{
+       display: flex;
+       flex-direction: row; 
+       width: 100%;
+       height: 40px;
+      }
+      
+      .nav_bar button{
+        display: inherit;
+        width: 100%;
+        height: 40px;
+        font-size: 8px;
+        color: aqua;
+        min-width: 12px; 
+        border: 1px;
+        border-color: darkslateblue;
+        background-color: rgb(3, 48, 88);
+        cursor: pointer;
+        align-items: center;
+        justify-content: center;
+      }
+      footer{
+        width: 100%;
+        height: 250px;
+        background-image: url(../public/Stars.jpeg);
+      }
+      .ft{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        width: 100%;
+        height: 200px;
+        align-items: center;
+        background-color: rgb(206, 201, 224);
+      }
+      
+      .footer{
+        position: static;
+        bottom: 0;
+        margin-top: 10px;
+        font-size: 1.5rem;
+        color: aliceblue;
+        display: grid;
+        place-items: center;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-gap:20px;
+      }
+      .cp{
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        color: black;
+        font-size: .7rem;
+      }
+      .menu{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        place-items: center;
+        grid-gap:3px;
+      }
+      .menu a{
+        text-decoration: none;
+        color: grey;
+        font-size: 1.7rem;
+      }
+      .menu a:hover{
+        color: white;
+      }
+      
+      .gl{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: grey;
+        color: black;
+        font-size: 2rem;
+        padding: 12px;
+        border: 4px solid black;
+        border-radius: 50%;
+      }
+      .gl:hover{
+        background-color: rgb(52, 12, 59);
+        color: #eee;
+        text-decoration-color: #eee;
+        border: 4px solid rgb(241, 230, 230);
+      }
+      
+      
+      button:hover{
+        background-color: rgb(52, 12, 59);
+        color: #eee;
+        text-decoration-color: #eee;
+        border-bottom: 2px solid black;
+        border-color: rgba(45, 9, 78, 0.609);
+      }
+      button .resume{
+        text-decoration: none;
+        color: aqua;
+      }
+      button .resume:hover{
+        color: #eee;
+      }
+      .home{
+        margin: 0;
+        width: 100%;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        place-items: center;
+        grid-gap: 15px;
+      }
+      
+      
+      .myname{
+        width: 100%;
+        height: 100vh;
+        padding-left: 15px;
+        color: rgb(19, 95, 161);
+        font-size: 1.7rem;
+        text-align: center;
+        text-wrap: nowrap;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+      }
+      .myProfile{
+        padding: 20px;
+        background-image: url("../public/IMG_20240418_145024.jpg");
+        background-size: cover;
+        background-color: aliceblue;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+      }
+      
+      .myProfile:hover{
+        border: 1px double rgb(59, 8, 107);
+        box-shadow: 
+             5px 5px 5px rgba(4, 41, 81, 0.636),
+             5px 5px 10px rgba(4, 41, 81, 0.636),
+             5px 5px 20px rgba(4, 41, 81, 0.636),
+            -5px -5px 15px rgba(4, 41, 81, 0.636);
+      }
+      .about{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .text_about{
+        color: #eee;
+        padding: 20vb;
+        text-align: center;
+        font-size: 1.7em;
+      }
+       
+      .projects{
+        width: 100%;
+        height: 100vh;
+        margin-top: 40px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      #proj p{
+        color: black;
+        text-align: center;
+        font-size: 1.5rem;
+       
+      }
+      #proj{
+        border: 3px solid purple;
+        border-radius: 10px;
+        background-color: white;
+        width: 250px;
+        display: grid;
+        grid-template-rows: none none;
+      }
+      
+      #proj:hover{
+        border: 3px solid purple;
+        border-radius: 10px;
+        box-shadow: 
+        12px 12px 12px rgb(78, 25, 142) ;
+      }
+      #miniapp{
+        display: grid;
+        padding: 5px;
+        border-bottom: 3px solid rgb(138, 10, 181);
+        grid-template-columns: 1fr 1fr;
+      }
+      
+      #applogo{
+        height: 100px;
+        width: 100px;
+        background-color: #eee;
+      }
+      
+      #miniapp a{
+          text-decoration: none;
+          text-align: start;
+          color: purple;
+          font-size: 2rem;
+      }
+      .skills{
+        width: 100%;
+        min-height: 100vh;
+        padding-top: 30px;
+        display: grid;
+        grid-template-columns: 60% 40%;
+        
+      }
+      .skills p{
+        color: #eee;
+      }
+      #show{
+        background-color: rgb(206, 201, 224);
+        
+      }
+      .language{
+        width: 70%;
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        justify-content: space-around;
+      }
+      
+      .language button{
+        margin: 10px;
+        font-size: 7rem;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding:20px 0;
+      }
+      #javaScript button{
+        color: rgb(12, 12, 10);
+        background-color: yellow;
+        font-size: 7rem;
+      }
+      #javaScript button:hover{
+        color: yellow;
+        background-color:rgb(12, 12, 10);
+      }
+      #python button{
+        color: yellow;
+        background-color: rgb(34, 135, 193);
+      }
+      #python button:hover{
+        color: rgb(34, 135, 193);
+        background-color: yellow;
+      }
+      #Cpp button{
+        color: rgb(41, 98, 203);
+        background-color: #eee;
+      }
+      #Cpp button:hover{
+        color: white;
+        background-color: rgb(41, 98, 203);
+      }
+      #java button:hover{
+        color: rgb(34, 135, 193);
+        background-color: yellow;
+      }
+      #java button{
+        color: yellow;
+        background-color: rgb(34, 135, 193);
+      }
+      #Reactjs button{
+        color: skyblue;
+        background-color: black;
+      }
+      #Reactjs button:hover{
+        background-color: skyblue;
+        color: black;
+      }
+      #Nodejs button:hover{
+        color: green;
+        background-color: black;
+      }
+      #Nodejs button{
+        background-color: green;
+        color: black;
+      }
+      #Spring button{
+        color: green;
+        background-color: rgb(253, 250, 250);
+      }
+      #Spring button:hover{
+        background-color: green;
+        color: rgb(247, 243, 243);
+      }
+      #MySQL button:hover{
+        color: rgb(34, 135, 193);
+        background-color: rgb(255, 132, 0);
+      }
+      #MySQL button{
+        color:  rgb(255, 132, 0);
+        background-color: rgb(34, 135, 193);
+      }
+      #MongoDB  button{
+        color: green;
+        background-color: rgb(253, 250, 250);
+      }
+      #MongoDB button:hover{
+        background-color: green;
+        color: rgb(247, 243, 243);
+      }
+      
+      #javaScriptsk{
+        background-color: blueviolet;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        height: 100%;
+      }
+      
+      #circular{
+        position: relative;
+        height: 75px;
+        width: 75px;
+        margin: 20px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      #ap{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      #circular::before{
+        content: "";
+        position: absolute;
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        background-color: rgb(203, 203, 225);
+      }
+      
+      #perc{
+        position: absolute;
+        font-size: 20px;
+        font-weight: 500;
+        color: blueviolet;
+      }
+      
+      #progress{
+        display: flex;
+        align-items: center;
+        justify-content:center;
+      
+      }
+      #jslogo{
+        margin: 10px;
+        font-size: 7rem;
+        width: 150px;
+        height: 150px;
+        border-radius: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding:20px 0;
+      }
+      .jsc1{
+        background: conic-gradient(rgb(72, 20, 213) 270deg, white 0deg );
+      }
+      
+      .jsc2{
+        background: conic-gradient(rgb(218, 32, 85) 160deg, white 0deg );
+      }
+      .jsc3{
+        background: conic-gradient(rgb(0, 128, 15) 234deg, white 0deg );
+      }
+      .pyc1{
+        background: conic-gradient(rgb(0, 128, 15) 234deg, white 0deg );
+      }
+      
+      .pyc2{
+        background: conic-gradient(rgb(218, 32, 85) 160deg, white 0deg );
+      }
+      .pyc3{
+        background: conic-gradient(rgb(193, 1, 1) 126deg, white 0deg );
+      }
+      .cc1{
+        background: conic-gradient(rgb(218, 32, 85) 160deg, white 0deg );
+      }
+      
+      .cc2{
+        background: conic-gradient(rgb(193, 1, 1) 126deg, white 0deg );
+      }
+      .cc3{
+        background: conic-gradient(rgb(205, 240, 6) 72deg, white 0deg );
+      }
+      .jc1{
+        background: conic-gradient(rgb(72, 20, 213) 270deg, white 0deg );
+      }
+      
+      .jc2{
+        background: conic-gradient(rgb(38, 221, 9) 198deg, white 0deg );
+      }
+      .jc3{
+        background: conic-gradient(rgb(72, 20, 213) 270deg, white 0deg );
+      }
+      .rjc1{
+        background: conic-gradient(rgb(72, 20, 213) 270deg, white 0deg );
+      }
+      
+      .rjc2{
+        background: conic-gradient(rgb(218, 32, 85) 162deg, white 0deg );
+      }
+      .rjc3{
+        background: conic-gradient(rgb(72, 20, 213) 252deg, white 0deg );
+      }
+      .nc1{
+        background: conic-gradient(rgb(0, 128, 15) 234deg, white 0deg );
+      }
+      
+      .nc2{
+        background: conic-gradient(rgb(218, 32, 85) 160deg, white 0deg );
+      }
+      .nc3{
+        background: conic-gradient(rgb(0, 128, 15) 216deg, white 0deg );
+      }
+      .sc1{
+        background: conic-gradient(rgb(0, 128, 15) 234deg, white 0deg );
+      }
+      
+      .sc2{
+        background: conic-gradient(rgb(218, 32, 85) 160deg, white 0deg );
+      }
+      .sc3{
+        background: conic-gradient(rgb(0, 128, 15) 234deg, white 0deg );
+      }
+      .mdc1{
+        background: conic-gradient(rgb(38, 221, 9) 198deg, white 0deg );
+      }
+      
+      .mdc2{
+        background: conic-gradient(rgb(218, 32, 85) 160deg, white 0deg );
+      }
+      .mdc3{
+        background: conic-gradient(rgb(0, 128, 15) 234deg, white 0deg );
+      }
+      .msc1{
+        background: conic-gradient(rgb(0, 128, 15) 234deg, white 0deg );
+      }
+      
+      .msc2{
+        background: conic-gradient(rgb(218, 32, 85) 160deg, white 0deg );
+      }
+      .msc3{
+        background: conic-gradient(rgb(0, 128, 15) 216deg, white 0deg );
+      }
+      
+      .java{
+        color: rgb(34, 135, 193);
+        background-color: yellow;
+      }
+      .cpp{
+        color: rgb(41, 98, 203);
+        background-color: #eee;
+      }
+      .py{
+        color: rgb(34, 135, 193);
+        background-color: yellow;
+      }
+      .js{
+        color: rgb(12, 12, 10);
+        background-color: yellow;
+      }
+      .md{
+        color: green;
+        background-color: rgb(253, 250, 250);
+      }
+      .ms{
+        color:  rgb(255, 132, 0);
+        background-color: rgb(34, 135, 193);
+      }
+      .node{
+        background-color: green;
+        color: black;
+      }
+      .rjs{
+        color: skyblue;
+        background-color: black;
+      }
+      .sp{
+        color: green;
+        background-color: rgb(253, 250, 250);
+      }
+      
+      #text-name{
+        color: aquamarine;
+        text-align: center;
+        font-size: 1rem;
+        text-shadow: 2px 2px rgb(18, 129, 247);
+      }
+}
+@media  screen and (min-width: 1200px) {
+
+.body{
+  width: 100%;
+  margin: 0;
+  background-image: url(../public/Stars.jpeg);
+  background-size: cover;
+  background-repeat: repeat;
+}
+
+.main{
+  width: 100%;
+  max-width: 100%;
+  height: 100vh;
+}
+
+header{
+  position: fixed;
+  top: 0;
+  display: grid;
+  width: 100%;
+  height: 40px;
+  border-bottom: 2px solid black;
+  background-color: rgb(52, 12, 59);
+  color: whitesmoke;
+  font-size: .7rem;
+  grid-template-columns: 5fr 4fr;
+  justify-content: center;
+  text-align: center;
+}
+
+.nav_bar{
+ display: flex;
+ flex-direction: row; 
+ width: 100%;
+ height: 40px;
+}
+
+.nav_bar button{
+  display: inherit;
+  width: 100%;
+  height: 40px;
+  font-size: 8px;
+  color: aqua;
+  min-width: 12px; 
+  border: 1px;
+  border-color: darkslateblue;
+  background-color: rgb(3, 48, 88);
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+footer{
+  width: 100%;
+  height: 250px;
+  background-image: url(../public/Stars.jpeg);
+}
+.ft{
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  width: 100%;
+  height: 200px;
+  align-items: center;
+  background-color: rgb(206, 201, 224);
+}
+
+.footer{
+  position: static;
+  bottom: 0;
+  margin-top: 10px;
+  font-size: 1.5rem;
+  color: aliceblue;
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap:20px;
+}
+.cp{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color: black;
+  font-size: .7rem;
+}
+.menu{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  place-items: center;
+  grid-gap:5px;
+}
+.menu a{
+  text-decoration: none;
+  color: grey;
+  font-size: 1.7rem;
+}
+.menu a:hover{
+  color: white;
+}
+
+.gl{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: grey;
+  color: black;
+  font-size: 2rem;
+  padding: 16px;
+  border: 5px solid black;
+
+  border-radius: 50%;
+}
+.gl:hover{
+  background-color: rgb(52, 12, 59);
+  color: #eee;
+  text-decoration-color: #eee;
+  border: 5px solid rgb(241, 230, 230);
+}
+
+
+button:hover{
+  background-color: rgb(52, 12, 59);
+  color: #eee;
+  text-decoration-color: #eee;
+  border-bottom: 2px solid black;
+  border-color: rgba(45, 9, 78, 0.609);
+}
+button .resume{
+  text-decoration: none;
+  color: aqua;
+}
+button .resume:hover{
+  color: #eee;
+}
+.home{
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  padding-top: 250px;
+  grid-template-columns: 50% 50%;
+  place-items: center;
+  grid-gap: 20px;
+}
+
+
+.myname{
+  width: 100%;
+  height: 100vh;
+  padding-left: 20px;
+  color: rgb(19, 95, 161);
+  font-size: 3rem;
+  text-align: center;
+  text-wrap: nowrap;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.myProfile{
+  padding: 20px;
+  background-image: url("../public/IMG_20240418_145024.jpg");
+  background-size: cover;
+  background-color: aliceblue;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+}
+
+.myProfile:hover{
+  border: 1px double rgb(59, 8, 107);
+  box-shadow: 
+       5px 5px 5px rgba(4, 41, 81, 0.636),
+       5px 5px 10px rgba(4, 41, 81, 0.636),
+       5px 5px 20px rgba(4, 41, 81, 0.636),
+      -5px -5px 15px rgba(4, 41, 81, 0.636);
+}
+.about{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text_about{
+  color: #eee;
+  padding: 20vb;
+  text-align: center;
+  font-size: 1.7em;
+}
+ 
+.projects{
+  width: 100%;
+  height: 100vh;
+  margin-top: 40px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#proj p{
+  color: black;
+  text-align: center;
+  font-size: 1.5rem;
+ 
+}
+#proj{
+  border: 3px solid purple;
+  border-radius: 10px;
+  background-color: white;
+  width: 250px;
+  display: grid;
+  grid-template-rows: none none;
+}
+
+#proj:hover{
+  border: 3px solid purple;
+  border-radius: 10px;
+  box-shadow: 
+  12px 12px 12px rgb(78, 25, 142) ;
+}
+#miniapp{
+  display: grid;
+  padding: 5px;
+  border-bottom: 3px solid rgb(138, 10, 181);
+  grid-template-columns: 1fr 1fr;
+}
+
+#applogo{
+  height: 100px;
+  width: 100px;
+  background-color: #eee;
+}
+
+#miniapp a{
+    text-decoration: none;
+    text-align: start;
+    color: purple;
+    font-size: 2rem;
+}
+.skills{
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 30px;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  
+}
+.skills p{
+  color: #eee;
+}
+#show{
+  background-color: rgb(206, 201, 224);
+  
+}
+.language{
+  width: 70%;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  justify-content: space-around;
+}
+
+.language button{
+  margin: 10px;
+  font-size: 7rem;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:20px 0;
+}
+#javaScript button{
+  color: rgb(12, 12, 10);
+  background-color: yellow;
+  font-size: 7rem;
+}
+#javaScript button:hover{
+  color: yellow;
+  background-color:rgb(12, 12, 10);
+}
+#python button{
+  color: yellow;
+  background-color: rgb(34, 135, 193);
+}
+#python button:hover{
+  color: rgb(34, 135, 193);
+  background-color: yellow;
+}
+#Cpp button{
+  color: rgb(41, 98, 203);
+  background-color: #eee;
+}
+
+#Cpp button:hover{
+  color: white;
+  background-color: rgb(41, 98, 203);
+}
+#java button:hover{
+  color: rgb(34, 135, 193);
+  background-color: yellow;
+}
+#java button{
+  color: yellow;
+  background-color: rgb(34, 135, 193);
+}
+#Reactjs button{
+  color: skyblue;
+  background-color: black;
+}
+#Reactjs button:hover{
+  background-color: skyblue;
+  color: black;
+}
+#Nodejs button:hover{
+  color: green;
+  background-color: black;
+}
+#Nodejs button{
+  background-color: green;
+  color: black;
+}
+#Spring button{
+  color: green;
+  background-color: rgb(253, 250, 250);
+}
+#Spring button:hover{
+  background-color: green;
+  color: rgb(247, 243, 243);
+}
+#MySQL button:hover{
+  color: rgb(34, 135, 193);
+  background-color: rgb(255, 132, 0);
+}
+#MySQL button{
+  color:  rgb(255, 132, 0);
+  background-color: rgb(34, 135, 193);
+}
+#MongoDB  button{
+  color: green;
+  background-color: rgb(253, 250, 250);
+}
+#MongoDB button:hover{
+  background-color: green;
+  color: rgb(247, 243, 243);
+}
+
+#javaScriptsk{
+  background-color: blueviolet;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  height: 100%;
+}
+
+#circular{
+  position: relative;
+  height: 150px;
+  width: 150px;
+  margin: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#circular::before{
+  content: "";
+  position: absolute;
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  background-color: rgb(203, 203, 225);
+}
+
+#perc{
+  position: absolute;
+  font-size: 30px;
+  font-weight: 500;
+  color: blueviolet;
+}
+#text-name{
+  color: #eee;
+}
+#progress{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  flex-direction: row;
+}
+#jslogo{
+  margin: 10px;
+  font-size: 7rem;
+  width: 150px;
+  height: 150px;
+  border-radius: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:20px 0;
+}
+.jsc1{
+  background: conic-gradient(rgb(72, 20, 213) 270deg, white 0deg );
+}
+
+.jsc2{
+  background: conic-gradient(rgb(218, 32, 85) 160deg, white 0deg );
+}
+.jsc3{
+  background: conic-gradient(rgb(0, 128, 15) 234deg, white 0deg );
+}
+.pyc1{
+  background: conic-gradient(rgb(0, 128, 15) 234deg, white 0deg );
+}
+
+.pyc2{
+  background: conic-gradient(rgb(218, 32, 85) 160deg, white 0deg );
+}
+.pyc3{
+  background: conic-gradient(rgb(193, 1, 1) 126deg, white 0deg );
+}
+.cc1{
+  background: conic-gradient(rgb(218, 32, 85) 160deg, white 0deg );
+}
+
+.cc2{
+  background: conic-gradient(rgb(193, 1, 1) 126deg, white 0deg );
+}
+.cc3{
+  background: conic-gradient(rgb(205, 240, 6) 72deg, white 0deg );
+}
+.jc1{
+  background: conic-gradient(rgb(72, 20, 213) 270deg, white 0deg );
+}
+
+.jc2{
+  background: conic-gradient(rgb(38, 221, 9) 198deg, white 0deg );
+}
+.jc3{
+  background: conic-gradient(rgb(72, 20, 213) 270deg, white 0deg );
+}
+.rjc1{
+  background: conic-gradient(rgb(72, 20, 213) 270deg, white 0deg );
+}
+
+.rjc2{
+  background: conic-gradient(rgb(218, 32, 85) 162deg, white 0deg );
+}
+.rjc3{
+  background: conic-gradient(rgb(72, 20, 213) 252deg, white 0deg );
+}
+.nc1{
+  background: conic-gradient(rgb(0, 128, 15) 234deg, white 0deg );
+}
+
+.nc2{
+  background: conic-gradient(rgb(218, 32, 85) 160deg, white 0deg );
+}
+.nc3{
+  background: conic-gradient(rgb(0, 128, 15) 216deg, white 0deg );
+}
+.sc1{
+  background: conic-gradient(rgb(0, 128, 15) 234deg, white 0deg );
+}
+
+.sc2{
+  background: conic-gradient(rgb(218, 32, 85) 160deg, white 0deg );
+}
+.sc3{
+  background: conic-gradient(rgb(0, 128, 15) 234deg, white 0deg );
+}
+.mdc1{
+  background: conic-gradient(rgb(38, 221, 9) 198deg, white 0deg );
+}
+
+.mdc2{
+  background: conic-gradient(rgb(218, 32, 85) 160deg, white 0deg );
+}
+.mdc3{
+  background: conic-gradient(rgb(0, 128, 15) 234deg, white 0deg );
+}
+.msc1{
+  background: conic-gradient(rgb(0, 128, 15) 234deg, white 0deg );
+}
+
+.msc2{
+  background: conic-gradient(rgb(218, 32, 85) 160deg, white 0deg );
+}
+.msc3{
+  background: conic-gradient(rgb(0, 128, 15) 216deg, white 0deg );
+}
+
+.java{
+  color: rgb(34, 135, 193);
+  background-color: yellow;
+}
+.cpp{
+  color: rgb(41, 98, 203);
+  background-color: #eee;
+}
+.py{
+  color: rgb(34, 135, 193);
+  background-color: yellow;
+}
+.js{
+  color: rgb(12, 12, 10);
+  background-color: yellow;
+}
+.md{
+  color: green;
+  background-color: rgb(253, 250, 250);
+}
+.ms{
+  color:  rgb(255, 132, 0);
+  background-color: rgb(34, 135, 193);
+}
+.node{
+  background-color: green;
+  color: black;
+}
+.rjs{
+  color: skyblue;
+  background-color: black;
+}
+.sp{
+  color: green;
+  background-color: rgb(253, 250, 250);
+}
+
+#text-name{
+  color: aquamarine;
+  text-align: center;
+  font-size: 1rem;
+  text-shadow: 2px 2px rgb(18, 129, 247);
+}
+}
+
+*,
+*:focus{outline: none}
+
+
