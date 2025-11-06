@@ -1,6 +1,7 @@
 import React from "react";
 import "./About.css";
-import profilePic from "./images/Arun.jpg"; // ✅ Update with your actual image path
+import { Link } from "react-router-dom"; // ✅ Import Link from React Router
+import profilePic from "./images/Arun.jpg"; // ✅ Update with actual image path
 
 const About = () => {
   // 🎂 Your Date of Birth
@@ -63,9 +64,10 @@ const About = () => {
             </div>
           </div>
 
-          <a href="/project" className="about-btn">
+          {/* ✅ Use Link instead of <a> for internal routing */}
+          <Link to="/project" className="about-btn">
             View My Projects
-          </a>
+          </Link>
         </div>
 
         {/* Right Image Section */}
