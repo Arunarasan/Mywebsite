@@ -25,7 +25,7 @@ const Header = ({
         <button>
           <Link
             id="resume-link"
-            to="https://drive.google.com/file/d/1A1CoWOggMnO-lma4vA8STVUJ8D4RwLUa/view?usp=drivesdk"
+            to="https://drive.google.com/file/d/1pBH1QcqYGpTvBh7_G6QZWrp42QtAfFkP/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
           >
