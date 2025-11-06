@@ -1,0 +1,104 @@
+/* Header container */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: linear-gradient(90deg, #3a0ca3, #4361ee, #4895ef);
+  padding: 15px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  box-shadow: 0 4px 20px rgba(72, 149, 239, 0.3);
+}
+
+/* Logo */
+.logo h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.purple {
+  color: #c77dff;
+}
+
+.blue {
+  color: #a2d2ff;
+}
+
+/* Navigation bar */
+.nav-bar {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.nav-bar button {
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 8px 12px;
+  position: relative;
+  transition: all 0.3s ease;
+  border-radius: 6px;
+}
+
+/* Hover Effect */
+.nav-bar button:hover {
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 10px rgba(162, 210, 255, 0.4);
+  transform: translateY(-2px);
+}
+
+/* Resume link inside button */
+#resume-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+#resume-link:hover {
+  color: #a2d2ff;
+}
+
+/* Add underline glow animation */
+.nav-bar button::after {
+  content: "";
+  position: absolute;
+  bottom: 3px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background: #a2d2ff;
+  transition: width 0.3s ease;
+}
+
+.nav-bar button:hover::after {
+  width: 60%;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+    padding: 20px 5%;
+  }
+
+  .nav-bar {
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .logo h2 {
+    font-size: 1.5rem;
+  }
+}

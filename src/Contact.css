@@ -1,0 +1,178 @@
+.contact-section {
+  background: linear-gradient(135deg, #0b0f19, #111628);
+  min-height: 100vh;
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/* =====================
+   TITLE SECTION
+===================== */
+.contact-title {
+  font-size: clamp(1.8rem, 5vw, 2.4rem);
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 8px;
+  text-align: center;
+  animation: fadeInDown 0.6s ease forwards;
+}
+
+.contact-subtitle {
+  color: #a7b8d8;
+  text-align: center;
+  max-width: 600px;
+  line-height: 1.6;
+  margin-bottom: 35px;
+  font-size: clamp(0.9rem, 2.5vw, 1rem);
+  animation: fadeIn 0.7s ease forwards;
+  animation-delay: 0.2s;
+}
+
+/* =====================
+   FORM CONTAINER
+===================== */
+.contact-form {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(15px);
+  box-shadow: 0 0 25px rgba(79, 140, 255, 0.15);
+  padding: 35px;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 500px;
+  transition: all 0.3s ease;
+  opacity: 0;
+  animation: fadeInUp 0.7s ease forwards;
+  animation-delay: 0.3s;
+}
+
+.contact-form:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 35px rgba(79, 140, 255, 0.25);
+}
+
+/* =====================
+   INPUT FIELDS
+===================== */
+.form-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+}
+
+.form-item label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #b0c4ff;
+  font-size: 0.9rem;
+}
+
+.form-item input,
+.form-item textarea {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  padding: 12px;
+  color: #fff;
+  font-size: 0.95rem;
+  outline: none;
+  transition: all 0.25s ease;
+}
+
+.form-item input:focus,
+.form-item textarea:focus {
+  border-color: #4f8cff;
+  box-shadow: 0 0 10px rgba(79, 140, 255, 0.3);
+}
+
+/* =====================
+   BUTTON
+===================== */
+.submit-btn {
+  background: linear-gradient(90deg, #4f8cff, #82b0ff);
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  width: 100%;
+  opacity: 0;
+  animation: fadeInUp 0.7s ease forwards;
+  animation-delay: 0.4s;
+}
+
+.submit-btn:hover {
+  background: linear-gradient(90deg, #82b0ff, #4f8cff);
+  box-shadow: 0 0 20px rgba(79, 140, 255, 0.4);
+  transform: translateY(-2px);
+}
+
+/* =====================
+   ANIMATIONS
+===================== */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(25px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* =====================
+   RESPONSIVE DESIGN
+===================== */
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 40px 20px;
+  }
+
+  .contact-form {
+    padding: 28px 22px;
+    max-width: 90%;
+  }
+
+  .contact-title {
+    font-size: 1.9rem;
+  }
+
+  .contact-subtitle {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-section {
+    padding: 35px 15px;
+  }
+
+  .contact-form {
+    padding: 25px 18px;
+    border-radius: 12px;
+  }
+
+  .submit-btn {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+  }
+
+  .contact-title {
+    font-size: 1.6rem;
+  }
+}

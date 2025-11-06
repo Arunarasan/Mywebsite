@@ -36,7 +36,9 @@ function App() {
         pathProject={pathProject}
         pathResume={pathResume}
         pathSkill={pathSkill} />
-        <Main />
+        <main>
+          <Main />
+        </main>
       <Footer />     
     </div>
   );
