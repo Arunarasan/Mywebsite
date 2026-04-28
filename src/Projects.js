@@ -10,6 +10,7 @@ import portfolioImg from "./images/pic1.webp";
 import stockupImg from "./images/stockup_mockup.png";
 import carIcon from "./images/icons8-car-100.png";
 import spartansImg from "./images/spartans_mockup.png";
+import mjdiImg from "./images/mjdi_mockup.png";
 
 const Projects = () => {
   const projectList = [
@@ -226,7 +227,129 @@ const Projects = () => {
 
   return (
     <section className="projects-section">
-      <h2 className="projects-title">🚀 My Projects</h2>
+      <div className="section-header">
+        <h2 className="projects-title">Software Solutions</h2>
+        <p className="projects-subtitle">Business software built for real-world operations</p>
+      </div>
+
+      {/* Featured Project Section */}
+      <div className="featured-project-card">
+        <div className="featured-image-container">
+          <div className="status-badge">
+            <span className="pulse-dot"></span> Production Ready
+          </div>
+          <img src={mjdiImg} alt="Billing Software" className="featured-img" />
+          <div className="trusted-note">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+              <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/>
+            </svg>
+            Trusted for Business Operations
+          </div>
+        </div>
+        
+        <div className="featured-content">
+          <div className="featured-header">
+            <h3 className="featured-title">Billing Software</h3>
+            <span className="category-tag">Billing & Inventory Management</span>
+          </div>
+          
+          <p className="featured-desc">
+            A complete business billing and inventory management solution designed for wholesale and retail operations. It helps businesses manage billing, stock, customers, suppliers, expenses, GST reports, and sales with a fast and user-friendly interface.
+          </p>
+          <p className="featured-desc highlight-desc">
+            Built for real-time shop operations with secure database handling, automated calculations, and advanced business reporting.
+          </p>
+
+          <div className="featured-stats">
+            <div className="stat-item">
+              <span className="stat-icon">⚡</span> Faster Billing
+            </div>
+            <div className="stat-item">
+              <span className="stat-icon">📦</span> Smart Inventory
+            </div>
+            <div className="stat-item">
+              <span className="stat-icon">📊</span> GST Ready
+            </div>
+            <div className="stat-item">
+              <span className="stat-icon">🔒</span> Secure Backup
+            </div>
+          </div>
+
+          <div className="featured-grid">
+            <div className="features-list">
+              <h4>Key Features:</h4>
+              <ul>
+                <li><span>✔</span> Invoice / Billing Management</li>
+                <li><span>✔</span> Product & Stock Management</li>
+                <li><span>✔</span> Customer & Supplier Tracking</li>
+                <li><span>✔</span> GST Billing & Tax Calculation</li>
+                <li><span>✔</span> Purchase & Expense Entry</li>
+                <li><span>✔</span> Sales Reports & Analytics</li>
+                <li><span>✔</span> Dashboard Overview & User Roles</li>
+                <li><span>✔</span> Print Invoice & Auto Backup</li>
+              </ul>
+            </div>
+
+            <div className="tech-stack">
+              <h4>Tech Stack:</h4>
+              <div className="tech-badges">
+                <span className="tech-badge">Java</span>
+                <span className="tech-badge">JavaFX</span>
+                <span className="tech-badge">MySQL</span>
+                <span className="tech-badge">JDBC</span>
+                <span className="tech-badge">CSS</span>
+                <span className="tech-badge">Maven</span>
+              </div>
+              
+              <div className="project-specs" style={{marginTop: '15px'}}>
+                 <div className="spec-item"><span>Platform:</span> Desktop Application</div>
+                 <div className="spec-item"><span>Status:</span> Active Usage</div>
+              </div>
+            </div>
+          </div>
+
+          <div className="featured-actions">
+            <a href="/downloads/BillingSoftware.zip" className="cta-btn primary" download>
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                <path d="M11 5h2v7h3.5L12 16.5 7.5 12H11V5zM4 18h16v2H4v-2z" />
+              </svg>
+              Download for Windows
+            </a>
+            <button className="cta-btn secondary" onClick={() => window.location.href='mailto:contact@mjdi.com?subject=Request Demo - Billing Software'}>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                <path d="M8 5v14l11-7z"/>
+              </svg>
+              Request Demo
+            </button>
+            <button className="cta-btn outline" onClick={() => window.location.href='mailto:contact@mjdi.com?subject=Custom Software Inquiry'}>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                 <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+              </svg>
+              Contact for Custom Software
+            </button>
+          </div>
+
+          <div className="featured-download-info" style={{ marginTop: '20px' }}>
+            <div className="p-warning" style={{ marginBottom: '15px' }}>
+              <strong>Note:</strong> If Windows shows "Protected your PC", click "More info" &rarr; "Run anyway".
+            </div>
+            <div className="install-steps">
+              <h4>How to Install:</h4>
+              <ol>
+                <li>Download the .zip file above.</li>
+                <li>Extract the .zip file to a folder.</li>
+                <li>Double-click to run the installer.</li>
+                <li>Click Next &rarr; Install and launch from Desktop.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="section-divider">
+        <h3>More Projects</h3>
+        <div className="divider-line"></div>
+      </div>
 
       <div className="premium-projects-list">
         {projectList.map((project, index) => (
